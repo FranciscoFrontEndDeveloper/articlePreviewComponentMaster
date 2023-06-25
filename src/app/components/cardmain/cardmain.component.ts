@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cardmain.component.sass'],
 })
 export class CardmainComponent {
-  avatarToSocial: boolean = true;
+  avatarToSocial: boolean = false;
 }
