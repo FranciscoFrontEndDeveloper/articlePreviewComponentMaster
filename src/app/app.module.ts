@@ -8,6 +8,7 @@ import { ImagenmainComponent } from './components/imagenmain/imagenmain.componen
 import { TextComponent } from './components/text/text.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
+import { SharebuttonComponent } from './components/sharebutton/sharebutton.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SocialmediaComponent } from './components/socialmedia/socialmedia.compo
     ImagenmainComponent,
     TextComponent,
     AvatarComponent,
-    SocialmediaComponent
+    SocialmediaComponent,
+    SharebuttonComponent
   ],
   imports: [
     BrowserModule,
