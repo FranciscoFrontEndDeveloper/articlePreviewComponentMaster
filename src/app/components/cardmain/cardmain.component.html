@@ -5,5 +5,16 @@
  <div>
   <app-text></app-text>
  </div>
- <div>footer</div>
+ <div>
+  <ng-container *ngIf="avatarToSocial; else elseTemplate">
+   <app-avatar></app-avatar>
+   
+  </ng-container>
+  <ng-template #elseTemplate>
+   <app-socialmedia></app-socialmedia>
+   
+  </ng-template>
+ </div>
 </section>
+
+
