@@ -6,10 +6,10 @@
   <app-text></app-text>
  </div>
  <div>
-  <ng-container *ngIf="avatarToSocial; else elseTemplate">
-   <app-avatar></app-avatar>
+  <ng-container *ngIf="avatarComponent; else shareComponent">
+   <app-avatar  ></app-avatar>
   </ng-container>
-  <ng-template #elseTemplate>
+  <ng-template #shareComponent>
    <app-socialmedia></app-socialmedia>
   </ng-template>
  </div>

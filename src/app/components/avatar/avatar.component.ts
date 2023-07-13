@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./avatar.component.sass']
 })
 export class AvatarComponent {
-
+  mensajePrueba: string = 'pruebas';
+  pruebaOuput(mensaje: any) {
+    this.mensajePrueba = mensaje;
+  }
 }

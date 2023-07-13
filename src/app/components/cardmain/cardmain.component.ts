@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SwitchService } from 'src/app/comunication/switch.service';
 
 @Component({
   selector: 'app-cardmain',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./cardmain.component.sass'],
 })
 export class CardmainComponent {
-  avatarToSocial: boolean = false;
+  avatarComponent!: boolean;
+  // shareComponent: boolean;
+
+  constructor(private switchService: SwitchService) {
+    this.switchService.stateFooter.subscribe((data) => {
+      this.avatarComponent = data;
+    });
+  }
+  ngOnInit(): void {}
 }

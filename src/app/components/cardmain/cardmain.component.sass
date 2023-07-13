@@ -6,5 +6,23 @@
  height: auto
  border-radius: 8px
  overflow: hidden
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(3, auto)
  div:nth-child(2)
   padding: 20px 30px
+
+@media screen and ( min-width: 1440px )
+ .containerCard
+  width: 50%
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: auto auto
+  grid-template-areas: 'image text' 'image avatar'
+  justify-self: center
+  margin: 0 auto
+  div:nth-child(1)
+   grid-area: image
+  div:nth-child(2)
+   grid-area: text
+  div:nth-child(3)
+   grid-area: avatar
